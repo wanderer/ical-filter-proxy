@@ -8,11 +8,10 @@ ARG VERSION="unknown"
 WORKDIR /src
 
 # install build tools
-RUN apk --no-cache add build-base
+RUN apk --no-cache add build-base=0.5-r3
 
 # download go module deps
 COPY go.mod go.sum ./
-RUN go version
 RUN go mod download
 
 # build binary
