@@ -53,7 +53,12 @@ You can also adapt the included [`docker-compose.yaml`](./docker-compose.yaml) e
 
 ### Kubernetes
 
-You can deploy iCal Filter Proxy using the included helm chart from [`charts/ical-filter-proxy`](charts/ical-filter-proxy).
+You can deploy iCal Filter Proxy using the helm chart from [`yungwood/helm-charts/ical-filter-proxy`](https://github.com/yungwood/helm-charts/blob/main/charts/ical-filter-proxy).
+
+```bash
+helm repo add yungwood https://yungwood.github.io/helm-charts/
+helm install --name your-release yungwood/ical-filter-proxy
+```
 
 ### Build from source
 
