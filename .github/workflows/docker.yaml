@@ -5,9 +5,10 @@ on:
   push:
     branches:
       - "*"
+    tags:
+      - "*"
     paths-ignore:
       - ".github/**"
-      - "charts/**"
       - ".gitignore"
       - "docker-compose.yaml"
       - LICENSE
@@ -19,7 +20,6 @@ on:
       - "master"
     paths-ignore:
       - ".github/**"
-      - "charts/**"
       - ".gitignore"
       - "docker-compose.yaml"
       - LICENSE
